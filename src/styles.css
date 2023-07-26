@@ -1,0 +1,40 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.drop-zone {
+  border: 2px dashed #aaa;
+  padding: 10px;
+  min-width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 74px;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.drop-zone.dragging {
+  background-color: #852525;
+  transition: transform 1s ease-out;
+  transform: scale(1.2);
+}
+
+.drag-item {
+  padding: 10px;
+  border: 1px solid #aaa;
+  cursor: grab;
+  background-color: #fff;
+  transition: box-shadow 0.2s;
+}
+
+.drag-item.dragging {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
